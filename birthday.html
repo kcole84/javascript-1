@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 15 px;
+        border-bottom: solid 1px #777;
+      }
+      input {
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Birthday Party List</h1>
+    <form name="birthdayForm" onsubmit="return addAttendee();">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" />
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastname" id="lastName" />
+      <button type="submit">Save Attendee</button>
+    </form>
+    <ul id="attendees"></ul>
+    <script src="birthday.js"></script>
+  </body>
+</html>
