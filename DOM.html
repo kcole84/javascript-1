@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+      form {
+        font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 15 px;
+        border-bottom: solid 1px #777777b4;
+      }
+      input {
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Images</h1>
+    <h2>Please enter the web address of an image:</h2>
+    <form name="happyImages" onsubmit="return addImage();">
+    <input type="text" name="imgSrc" id="imgSrc" />
+    <button type="submit">Save Image</button>
+    </form>
+    <div id="Images"></div>
+     
+
+        <script src="DOM.js"></script>  
+
+    
+</body>
+</html>
